@@ -1,0 +1,37 @@
+Comandos de diferentes aplicaciones y/o aeae programas 
+
+Bash
+
+ls ---> lista los elementos de la carpeta
+cd ---> entra en un directorio 
+mv ---> mueve un archivo a un directorio 
+rm ---> borra un archivo 
+lscpu ---> muestras caracteristicas de la computadora
+lspci -v ---> Da info sobre las distintas placas de la compu
+
+
+
+Git 
+
+git status ---> me dice el estado del trabajo y si tengo archivos pendientes de agregar/ comitear
+git branch <name> ---> Me crea una nueva rama con nombre <name>
+git branch ---> me dice en donde estoy parado del arbol de ramas
+git add ---> me agrega un archivo del directorio
+git add . ---> me agrega todos los archivos pendientes a agregar 
+git remote add <name> <url> ---> me agrega una direccion remota para subir/bajar archivos
+git remote -v ---> me muestra las direcciones remotas
+git init <name> ---> inicia un repositorio git 
+git log ---> me dice la historia de los commit 
+git pull ---> trae las cosas desde el repositorio remoto
+git push ---> sube a las cosas al repositorio remoto 
+
+
+LaTEX
+
+\pagebreak ---> Pasa a la pagina siguiente
+
+
+Compilación
+
+gcc <program.> -o <ejecutable_name> ---> Nos comipla el programa y el flag nos deja poner el nombre del ejecutable
+gcc -E <program.> -o <ejecutable_name.pp.x> ---> corta al compilador en la etapa pre-procesador 

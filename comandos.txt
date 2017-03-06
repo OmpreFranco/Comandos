@@ -36,3 +36,5 @@ Compilación
 gcc <program.> -o <ejecutable_name> ---> Nos comipla el programa y el flag nos deja poner el nombre del ejecutable
 gcc -E <program.> -o <ejecutable_name.pp.x> ---> corta al compilador en la etapa pre-procesador 
 gcc -S <program.> -o <ejecutable_name.asm> ---> corta al compilador en la etapa Compilador 1 y me da el archivo assembler
+gcc -c <program.> -o <ejecutable_name.o> ---> corta al compilador en la etapa Compilador 2 y me da el objeto
+

@@ -10,7 +10,9 @@ lscpu ---> muestras caracteristicas de la computadora
 lspci -v ---> Da info sobre las distintas placas de la compu
 cat ---> te escribe el archivo en pantalla
 chown <a quien> <archivo> ---> te cambia el dueno del archivo
+chown -R <a quien> <directorioo> ---> te cambia el dueno del directorio y todo lo que esta adentro
 chmod <644> <archivo> ---> me cambia el modo del archivo para que no sea ejecutable 
+history ---> Me da la historia de los comandos introducidos en la terminal 
 
 Git 
 
@@ -19,6 +21,7 @@ git branch <name> ---> Me crea una nueva rama con nombre <name>
 git branch ---> me dice en donde estoy parado del arbol de ramas
 git add ---> me agrega un archivo del directorio
 git add . ---> me agrega todos los archivos pendientes a agregar 
+git add <nombre de la carpeta nueva>/* --->
 git remote add <name> <url> ---> me agrega una direccion remota para subir/bajar archivos
 git remote -v ---> me muestra las direcciones remotas
 git init <name> ---> inicia un repositorio git 
@@ -28,16 +31,41 @@ git pull --all ---> trae las cosas desde el repositorio remoto(todas las ramas)
 git push ---> sube a las cosas al repositorio remoto 
 git push --set--upstream <name.remote> <namelocal> ---> Me sube la rama actual 
 git push -u ---> Hace lo mismo que la de arriba
+git push -u origin master ---> me sirve para cuando tengo el repositorio en la cpu y la master aca subirla y que se cree alla arriba
 git clone <url> ---> me baja el fichero de la url y me crea una carpeta con dicho fichero 
 git diff <archivo> <archivo> ---> marca las diferencias entre dos archivos 
 git fetch --all ---> updatea las locales pero no crea nuevas 
-
-
+git checkout <branch> ---> Me cambia a la rama que puse 
+git checkout <nro.commit> ---> vuelve a ese commit por si queremos debbugear o no hechar moco, te pide crear una rama nueva dsp 
+git checkout <archivo> ---> vuelve al ultimo archivo en el cual fue comiteado
+git ignore <archivo> ---> ignora el archivo 
+git merge <rama1> <rama2> ---> mergea la rama 1 con la rama 2 
 
 
 LaTEX
 
 \pagebreak ---> Pasa a la pagina siguiente
+
+Mathplotlib 
+
+plt.figure(numero_figura) ---> Nos permite crear un grafico con el nomre o numero de fig
+plt.plot(x , y , lw =(ancho de linea) , "color" , label = "nombre") ---> Plotea un grafico con los siguientes parametros
+plt.grid() ---> Pone una grilla en el grafico 
+plt.ylabel("Nombre") ---> Le pone nombre al eje y 
+plt.xlabel("Nombre") ---> Le pone nombre al eje x
+plt.ylim(num,num) ---> Limita el grafico entre dos numeros en el eje y 
+plt.xlim(num,num) ---> Limita el grafico entre dos numeros en el eje x
+plt.annotate("Nombre" , xy = (num,num) , nytext = (num,num)) ---> Escribe anotaciones en el grafico sobre un punto en particular
+plt.axis([num,num,num,num]) ---> Tamano de los ejes 
+plt.loglog() ---> Plotea con los mismos parametros que el plot pero en escala logaritmica en x e y 
+plt.semilogx() ---> Escala logritmica en x 
+plt.show() ---> Muestra el grafico
+plt.title(name) ---> Nombre del titulo del grafico
+plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3, ncol=2, mode="expand", borderaxespad=0.) ---> Me crea una caja arriba donde van las legends, sino no aparecen
+
+
+red dashes, blue squares and green triangles --- "r--" , "bs", "g^"
+
 
 
 Compilación

@@ -13,12 +13,19 @@ chown <a quien> <archivo> ---> te cambia el dueno del archivo
 chown -R <a quien> <directorioo> ---> te cambia el dueno del directorio y todo lo que esta adentro
 chmod <644> <archivo> ---> me cambia el modo del archivo para que no sea ejecutable 
 history ---> Me da la historia de los comandos introducidos en la terminal 
-
+pwd ---> Nos dice el path completo de donde estamos parados 
+chmod +x *.desktop ---> para cambiar el modo de un archivo a confiable y poder lanzarlo como un icono en el desktop 
+speedtest-cli ---> Programa para ver conexion a internet
+wget [nombre de pagina web] ---> descarga con wget
+wget -o [nombre desado][nombre de pagina web] --->descarga con wget cambiando el nombre
+wget -c [nombre]  ---> Continua una descarga ininterrumpida
+convert -resize 1024X768 imagen_inicio imagen_final ---> Me cambia el tamaño de la imagen inicio 
 Git 
 
 git status ---> me dice el estado del trabajo y si tengo archivos pendientes de agregar/ comitear
 git branch <name> ---> Me crea una nueva rama con nombre <name>
 git branch ---> me dice en donde estoy parado del arbol de ramas
+git branch -d <branch> ----> Borra la rama 
 git add ---> me agrega un archivo del directorio
 git add . ---> me agrega todos los archivos pendientes a agregar 
 git add <nombre de la carpeta nueva>/* --->
@@ -45,7 +52,10 @@ git merge <rama1> <rama2> ---> mergea la rama 1 con la rama 2
 LaTEX
 
 \pagebreak ---> Pasa a la pagina siguiente
-
+\textbf{} ---> Negrita
+\underline{} ---> Subrayado
+\textit{} ---> Italico
+ \emph{} ---> enfatiza una frase 
 Mathplotlib 
 
 plt.figure(numero_figura) ---> Nos permite crear un grafico con el nomre o numero de fig
